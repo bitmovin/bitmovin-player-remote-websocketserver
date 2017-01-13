@@ -6,12 +6,18 @@ import * as WebSocket from 'ws';
 
 let wss = new WebSocket.Server({ port: 29100 });
 
-wss.on('connection', function connection(ws) {
-  console.log(ws);
+wss.on('connection', function(ws) {
+  console.log('Connected');
 
-  ws.on('message', function incoming(message) {
+  ws.on('error', function(error: Error) {
+    console.error(error);
+  });
+  ws.on('message', function(message) {
     console.log('received: %s', message);
   });
+  ws.on('close', function(code: number, message: string) {
+    console.log(`Connection closed (${code} ${message})`);
+  });
 
-  ws.send('something from the server');
+  ws.send('test message from the server');
 });
