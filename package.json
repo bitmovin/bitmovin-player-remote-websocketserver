@@ -1,0 +1,19 @@
+{
+  "name": "bitmovin-player-remote-websocketserver",
+  "version": "1.0.0",
+  "description": "WebSocket Remote Control Server for the Bitmovin Player",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mario Guggenberger <mario.guggenberger@bitmovin.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/ws": "0.0.37",
+    "typescript": "^2.1.5"
+  }
+}
