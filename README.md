@@ -11,6 +11,7 @@ Quick Start
   * Make sure the `WebSocketRemoteControlReceiver` in `cast-receiver/index.html` is not commented out
   * set the `url` to `ws://your-server-ip:29100`
 * Configure player(s) with `remotecontrol` section
+
   ```js
   remotecontrol: {
     type: `websocket`,
