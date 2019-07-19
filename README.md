@@ -7,15 +7,19 @@ Quick Start
 -----------
 
 * Run the server with `npm start`
+  * figure out the IP address or use `localhost`
 * Launch receiver apps with (`grunt remotereceiver-serve` in `bitdash`)
   * Make sure the `WebSocketRemoteControlReceiver` in `cast-receiver/index.html` is not commented out
   * set the `url` to `ws://your-server-ip:29100`
 * Configure player(s) with `remotecontrol` section
 
   ```js
+const playerConfig = {
+  ...,
   remotecontrol: {
     type: 'websocket',
     url: 'ws://your-server-ip:29100',
-  }
+  },
+};
   ```
 * Use the Cast button to start a remote-control session with all receivers listening to the same server
