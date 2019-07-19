@@ -14,12 +14,12 @@ Quick Start
 * Configure player(s) with `remotecontrol` section
 
   ```js
-const playerConfig = {
-  ...,
-  remotecontrol: {
-    type: 'websocket',
-    url: 'ws://your-server-ip:29100',
-  },
-};
+  const playerConfig = {
+    ...,
+    remotecontrol: {
+      type: 'websocket',
+      url: 'ws://your-server-ip:29100',
+    },
+  };
   ```
 * Use the Cast button to start a remote-control session with all receivers listening to the same server
