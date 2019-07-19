@@ -22,4 +22,8 @@ Quick Start
     },
   };
   ```
+* Validate server output
+  * For every remote receiver instance there must be one `RemoteReceiver connected` message
+  * For every remote controller (player) instance there must be one `Remote connected` message
 * Use the Cast button to start a remote-control session with all receivers listening to the same server
+  * If Cast button does not appear, simply call `player.castVideo();`
