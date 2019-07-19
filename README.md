@@ -14,8 +14,8 @@ Quick Start
 
   ```js
   remotecontrol: {
-    type: `websocket`,
-    url: `ws://your-server-ip:29100`
+    type: 'websocket',
+    url: 'ws://your-server-ip:29100',
   }
   ```
 * Use the Cast button to start a remote-control session with all receivers listening to the same server
