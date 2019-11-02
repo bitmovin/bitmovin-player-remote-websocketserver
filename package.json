@@ -10,7 +10,7 @@
   "author": "Mario Guggenberger <mario.guggenberger@bitmovin.com>",
   "license": "ISC",
   "dependencies": {
-    "ws": "^1.1.1"
+    "ws": "^3.3.1"
   },
   "devDependencies": {
     "@types/ws": "0.0.37",
